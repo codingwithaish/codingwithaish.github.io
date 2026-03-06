@@ -182,5 +182,27 @@
       <p>Thathapudi Nikhitha Aishwarya</p>
     </div>
   </footer>
+
+  <script>
+    const revealTargets = document.querySelectorAll(
+      ".hero-grid > *, .section-title, .lead, .skills-grid article, .card, .timeline article, .two-col article, .contact-links a"
+    );
+
+    revealTargets.forEach((el) => el.classList.add("reveal"));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.18 }
+    );
+
+    revealTargets.forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>

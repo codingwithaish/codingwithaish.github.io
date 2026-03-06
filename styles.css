@@ -24,6 +24,7 @@ body {
     radial-gradient(circle at 52% 22%, rgba(224, 197, 255, 0.34), transparent 39%),
     linear-gradient(120deg, #fffefe 0%, #f8f3ff 49%, #f0f6ff 100%);
   line-height: 1.6;
+  animation: bg-shift 18s ease-in-out infinite alternate;
 }
 
 .container {
@@ -68,11 +69,12 @@ nav a {
   color: var(--muted);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 nav a:hover {
   color: var(--text);
+  transform: translateY(-1px);
 }
 
 .hero {
@@ -119,11 +121,12 @@ h1 {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(130, 118, 213, 0.2);
 }
 
 .btn-solid {
@@ -142,6 +145,7 @@ h1 {
   border-radius: 20px;
   padding: 1.25rem 1.3rem;
   box-shadow: var(--shadow);
+  animation: float 4.5s ease-in-out infinite;
 }
 
 .hero-card h2 {
@@ -192,6 +196,16 @@ h1 {
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.05rem 1.1rem;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.skills-grid article:hover,
+.card:hover,
+.timeline article:hover,
+.two-col article:hover {
+  transform: translateY(-6px);
+  border-color: rgba(128, 98, 255, 0.42);
+  box-shadow: 0 16px 28px rgba(147, 124, 229, 0.24);
 }
 
 .cards {
@@ -262,6 +276,38 @@ footer {
   background: rgba(255, 255, 255, 0.45);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(22px) scale(0.985);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bg-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 @media (max-width: 960px) {
   .hero-grid,
   .cards,
@@ -272,5 +318,15 @@ footer {
 
   .section-pad {
     padding: 3.5rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }
