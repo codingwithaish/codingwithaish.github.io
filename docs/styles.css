@@ -1,15 +1,15 @@
 :root {
-  --bg: #0b1b47;
-  --bg-soft: #102a66;
-  --surface: rgba(255, 255, 255, 0.95);
-  --surface-2: rgba(237, 244, 255, 0.92);
-  --text: #0f2c66;
-  --muted: #3f5f99;
-  --accent: #1f4fd1;
-  --accent-2: #2e64f0;
-  --accent-3: #5d8cff;
-  --border: rgba(53, 98, 212, 0.24);
-  --shadow: 0 20px 40px rgba(7, 32, 97, 0.22);
+  --bg: #0a1f57;
+  --bg-soft: #103175;
+  --surface: #ffffff;
+  --surface-2: #f0f5ff;
+  --text: #0a1f57;
+  --muted: #264a92;
+  --accent: #1f57e0;
+  --accent-2: #2d6dff;
+  --accent-3: #5b8eff;
+  --border: rgba(26, 76, 196, 0.28);
+  --shadow: 0 18px 34px rgba(9, 35, 100, 0.2);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 16% 6%, rgba(93, 140, 255, 0.2), transparent 34%),
-    radial-gradient(circle at 86% 18%, rgba(48, 100, 240, 0.18), transparent 30%),
-    linear-gradient(180deg, #eaf1ff 0%, #dce7ff 56%, #cfdfff 100%);
+    radial-gradient(circle at 16% 6%, rgba(77, 126, 255, 0.2), transparent 34%),
+    radial-gradient(circle at 86% 18%, rgba(45, 97, 238, 0.18), transparent 30%),
+    linear-gradient(180deg, #e8f0ff 0%, #d8e5ff 56%, #c9dcff 100%);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -79,7 +79,7 @@ body {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(231, 240, 255, 0.84);
+  background: rgba(238, 245, 255, 0.95);
   border-bottom: 1px solid var(--border);
 }
 
@@ -191,7 +191,7 @@ h2 {
 
 .btn-ghost {
   color: var(--text);
-  background: rgba(226, 237, 255, 0.9);
+  background: #e7f0ff;
 }
 
 .metrics {
@@ -296,8 +296,8 @@ h2 {
 
 .card:hover {
   transform: scale(1.03) translateY(-5px);
-  border-color: rgba(47, 96, 226, 0.58);
-  box-shadow: 0 22px 36px rgba(12, 49, 132, 0.24);
+  border-color: rgba(31, 87, 224, 0.65);
+  box-shadow: 0 20px 34px rgba(9, 46, 130, 0.24);
 }
 
 .card a {
@@ -333,7 +333,7 @@ h2 {
   text-decoration: none;
   color: var(--text);
   border: 1px solid var(--border);
-  background: rgba(226, 237, 255, 0.9);
+  background: #e7f0ff;
   border-radius: 999px;
   padding: 0.55rem 0.85rem;
   transition: transform 0.25s ease, border-color 0.25s ease;
@@ -349,7 +349,7 @@ footer {
   text-align: center;
   border-top: 1px solid var(--border);
   color: var(--muted);
-  background: rgba(214, 228, 255, 0.86);
+  background: rgba(220, 232, 255, 0.95);
 }
 
 .reveal {
