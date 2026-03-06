@@ -306,6 +306,11 @@ h2 {
   font-weight: 700;
 }
 
+.project-label {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .about-block {
   padding: 1.2rem;
   display: grid;
