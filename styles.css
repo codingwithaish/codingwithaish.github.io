@@ -3,13 +3,13 @@
   --bg-soft: #f2eef8;
   --surface: rgba(255, 255, 255, 0.84);
   --surface-2: rgba(255, 255, 255, 0.72);
-  --text: #2b2440;
-  --muted: #6e6687;
-  --accent: #7a84f7;
-  --accent-2: #9a78e8;
-  --accent-3: #e694bb;
-  --border: rgba(128, 112, 179, 0.24);
-  --shadow: 0 20px 40px rgba(116, 100, 166, 0.16);
+  --text: #23324d;
+  --muted: #66738f;
+  --accent: #6f8fe8;
+  --accent-2: #7b9def;
+  --accent-3: #8eaeff;
+  --border: rgba(109, 137, 194, 0.24);
+  --shadow: 0 20px 40px rgba(90, 120, 176, 0.16);
 }
 
 * {
@@ -25,8 +25,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 16% 6%, rgba(122, 132, 247, 0.2), transparent 34%),
-    radial-gradient(circle at 86% 18%, rgba(230, 148, 187, 0.18), transparent 30%),
+    radial-gradient(circle at 16% 6%, rgba(111, 143, 232, 0.2), transparent 34%),
+    radial-gradient(circle at 86% 18%, rgba(142, 174, 255, 0.18), transparent 30%),
     linear-gradient(180deg, #fdfcff 0%, #f6f2fc 56%, #f3f7ff 100%);
   line-height: 1.6;
   overflow-x: hidden;
@@ -47,7 +47,7 @@ body {
   height: 360px;
   top: -80px;
   right: -80px;
-  background: radial-gradient(circle at 30% 30%, #a7b8ff, #b299f0, #f4bed8);
+  background: radial-gradient(circle at 30% 30%, #a7bbf5, #9db1ef, #c9dafb);
 }
 
 .orb-2 {
@@ -55,7 +55,7 @@ body {
   height: 420px;
   left: -120px;
   bottom: -120px;
-  background: radial-gradient(circle at 70% 30%, #f7bfd7, #c3b6ff, #b9dcff);
+  background: radial-gradient(circle at 70% 30%, #ccd9fb, #b8caf7, #dce8ff);
   animation-duration: 17s;
 }
 
@@ -282,8 +282,8 @@ h2 {
 
 .card:hover {
   transform: scale(1.03) translateY(-5px);
-  border-color: rgba(122, 132, 247, 0.55);
-  box-shadow: 0 22px 36px rgba(120, 102, 172, 0.22);
+  border-color: rgba(111, 143, 232, 0.55);
+  box-shadow: 0 22px 36px rgba(106, 128, 176, 0.22);
 }
 
 .card a {
@@ -322,7 +322,7 @@ h2 {
 
 .contact-links a:hover {
   transform: translateY(-2px);
-  border-color: rgba(122, 132, 247, 0.6);
+  border-color: rgba(111, 143, 232, 0.6);
 }
 
 footer {
