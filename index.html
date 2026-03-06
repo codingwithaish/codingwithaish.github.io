@@ -3,171 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of T.N. Aishwarya - Computer Science Engineering student, web developer, and ML enthusiast." />
-  <title>T.N. Aishwarya | Portfolio</title>
+  <meta name="description" content="Thathapudi Nikhitha Aishwarya - Full-stack developer portfolio in a modern tech-company style." />
+  <title>Aishwarya | Engineer & Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
   <header class="site-header">
-    <div class="container nav-wrap">
-      <p class="brand">AISHWARYA</p>
+    <div class="container topbar">
+      <a class="logo" href="#">AISHWARYA<span>LABS</span></a>
       <nav>
+        <a href="#work">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#insights">Insights</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a class="btn btn-ghost" href="mailto:aishwaryathathapudi@gmail.com">Let’s Talk</a>
     </div>
   </header>
 
   <main>
-    <section class="hero section-pad">
-      <div class="container hero-grid">
-        <div>
-          <p class="kicker">Computer Science Engineer • 2026 Graduate</p>
-          <h1>T.N. Aishwarya</h1>
-          <p class="hero-text">
-            I build clean, scalable web products and practical AI-powered solutions. I focus on real user value,
-            strong fundamentals, and execution that ships.
+    <section class="hero section">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio • Engineering • Product Mindset</p>
+          <h1>Building web products that feel like real tech companies ship them.</h1>
+          <p>
+            I am a Computer Science Engineering student with a strong interest in full-stack application development.
+            I build modern interfaces, reliable backend systems, and practical products for real users.
           </p>
-          <div class="cta-row">
-            <a class="btn btn-solid" href="#projects">View Projects</a>
-            <a class="btn btn-outline" href="mailto:aishwaryathathapudi@gmail.com">Hire Me</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">Explore Projects</a>
+            <a class="btn btn-ghost" href="#insights">Read Insights</a>
+          </div>
+          <div class="metrics">
+            <article>
+              <h3>9.2/10</h3>
+              <p>CGPA</p>
+            </article>
+            <article>
+              <h3>MERN</h3>
+              <p>Core Stack</p>
+            </article>
+            <article>
+              <h3>2+</h3>
+              <p>Industry Internships</p>
+            </article>
           </div>
         </div>
-        <aside class="hero-card">
-          <h2>Quick Snapshot</h2>
+
+        <aside class="hero-panel reveal">
+          <p class="panel-kicker">Featured Build</p>
+          <h2>FitHealth Tracker</h2>
+          <p>
+            A full-stack fitness product for profile management, workout tracking, and progress visualization with a clean product UX.
+          </p>
           <ul>
-            <li>Computer Science Engineer with CGPA 9.2 / 10</li>
-            <li>Full-Stack Developer (MERN) and AI Enthusiast</li>
-            <li>Industry experience through internships at NIELIT and Eligo (Internsup)</li>
+            <li>Role: Full-Stack Developer</li>
+            <li>Stack: MongoDB, Express, React, Node.js</li>
+            <li>Status: Production-ready portfolio build</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section id="about" class="section-pad">
+    <section id="work" class="section">
       <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="lead">
-          I am a Computer Science Engineering student with a strong interest in full-stack application development.
-          I enjoy building modern web applications with clean user interfaces and efficient backend systems.
-          I am passionate about creating useful and practical web and mobile applications that solve real-world
-          problems. I am always eager to learn new technologies and continuously improve my development skills
-          to build better software solutions.
-        </p>
-      </div>
-    </section>
-
-    <section class="section-pad skills-section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <article>
-            <h3>Languages & Databases</h3>
-            <p>Java, C, Python, SQL, MongoDB</p>
-          </article>
-          <article>
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, React.js</p>
-          </article>
-          <article>
-            <h3>Tools</h3>
-            <p>Git, Visual Studio, NetBeans, Jupyter Notebook, MongoDB Compass, Postman, Linux, AWS EC2 basics</p>
-          </article>
-          <article>
-            <h3>Coursework</h3>
-            <p>DSA, DBMS, OOP, Design & Analysis of Algorithms, Computer Networks, Operating Systems</p>
-          </article>
+        <div class="section-head reveal">
+          <p class="eyebrow">Case Studies</p>
+          <h2>Selected Work</h2>
         </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section-pad">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="cards">
-          <article class="card">
-            <p class="card-tag">MERN</p>
+        <div class="cards work-grid">
+          <article class="card reveal">
+            <p class="tag">Product Engineering</p>
             <h3>FitHealth Tracker</h3>
-            <p>
-              Built a full-stack fitness tracker where users create profiles, log workouts, and monitor progress with
-              visual insights for consistency and calorie tracking.
-            </p>
+            <p>Built a scalable fitness web app with progress analytics and clean dashboard-driven UX.</p>
+            <a href="#">Project Link (Add Later)</a>
           </article>
-          <article class="card">
-            <p class="card-tag">FastAPI + ML</p>
+          <article class="card reveal">
+            <p class="tag">Applied AI</p>
             <h3>Study Planner for Students</h3>
-            <p>
-              Developed an intelligent planner that generates personalized study schedules based on priority, deadlines,
-              and prior performance. Deployed for real-time access.
-            </p>
+            <p>Developed an intelligent planner that creates personalized schedules based on priorities and deadlines.</p>
+            <a href="#">Project Link (Add Later)</a>
           </article>
-          <article class="card">
-            <p class="card-tag">Python + ML</p>
+          <article class="card reveal">
+            <p class="tag">Health Analytics</p>
             <h3>Diabetes Detection Model</h3>
-            <p>
-              Implemented a supervised learning pipeline for early diabetes prediction using clinical features,
-              with preprocessing and model optimization for higher reliability.
-            </p>
+            <p>Implemented a supervised pipeline for early diabetes prediction with structured model evaluation.</p>
+            <a href="#">Project Link (Add Later)</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section-pad">
+    <section id="expertise" class="section alt">
       <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-          <article>
-            <h3>Web Developer Intern • Eligo</h3>
-            <p class="muted">May 2025 - Jul 2025</p>
-            <p>
-              Built MERN web applications, connected frontend interfaces to backend services, and improved development
-              workflows with version control and structured data management.
-            </p>
+        <div class="section-head reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Expertise & Stack</h2>
+        </div>
+        <div class="cards capability-grid">
+          <article class="card reveal">
+            <h3>Frontend Engineering</h3>
+            <p>HTML, CSS, JavaScript, TypeScript, React.js</p>
           </article>
-          <article>
-            <h3>AIML Intern • NIELIT</h3>
-            <p class="muted">May 2024 - Jul 2024</p>
-            <p>
-              Designed machine learning models for health analytics and compared classification approaches to improve
-              model accuracy and interpretability.
-            </p>
+          <article class="card reveal">
+            <h3>Backend Engineering</h3>
+            <p>Node.js, Express.js, REST APIs, SQL, MongoDB</p>
+          </article>
+          <article class="card reveal">
+            <h3>Tools & Workflow</h3>
+            <p>Git, Postman, MongoDB Compass, Jupyter Notebook, Linux, AWS EC2 basics</p>
+          </article>
+          <article class="card reveal">
+            <h3>Experience</h3>
+            <p>Web Developer Intern at Eligo and AIML Intern at NIELIT with production-focused delivery.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-pad">
-      <div class="container two-col">
-        <article>
-          <h2 class="section-title">Education</h2>
-          <ul class="plain-list">
-            <li><strong>B.Tech CSE</strong> - Bapatla Engineering College (2022-2026), GPA 9.15/10.0</li>
-          </ul>
-        </article>
-        <article>
-          <h2 class="section-title">Certifications</h2>
-          <ul class="plain-list">
-            <li>Google Cloud - Generative AI Fundamentals</li>
-            <li>IBM - AI Fundamentals</li>
-            <li>University of London (Coursera) - Responsive Website Basics</li>
-            <li>ReactJS Bootcamp, Cybersecurity Workshop</li>
-          </ul>
-        </article>
+    <section id="insights" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Blog Style Section</p>
+          <h2>Insights & Writing</h2>
+        </div>
+        <div class="cards blog-grid">
+          <article class="card reveal">
+            <p class="tag">Engineering Notes</p>
+            <h3>How I Structure MERN Projects for Scale</h3>
+            <p>Folder architecture, API design, and practical patterns I use to keep projects maintainable.</p>
+            <a href="#">Article Link (Add Later)</a>
+          </article>
+          <article class="card reveal">
+            <p class="tag">Career</p>
+            <h3>What Internships Taught Me About Shipping</h3>
+            <p>Lessons from Eligo and NIELIT on writing reliable code in team environments.</p>
+            <a href="#">Article Link (Add Later)</a>
+          </article>
+          <article class="card reveal">
+            <p class="tag">AI x Product</p>
+            <h3>Building Practical Student-Focused AI Tools</h3>
+            <p>A product-first perspective on using AI to solve educational planning challenges.</p>
+            <a href="#">Article Link (Add Later)</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section-pad contact">
-      <div class="container">
-        <h2 class="section-title">Let’s Build Something Real</h2>
+    <section id="about" class="section alt">
+      <div class="container about-block reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Thathapudi Nikhitha Aishwarya</h2>
+        </div>
         <p>
-          Open to internships, collaborations, and full-time opportunities in software engineering and AI-driven product development.
+          I am passionate about creating useful and practical web and mobile applications that solve real-world problems.
+          I am always eager to learn new technologies and continuously improve my development skills to build better software solutions.
         </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-box reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to internships, collaborations, and software roles.</h2>
+        </div>
         <div class="contact-links">
           <a href="mailto:aishwaryathathapudi@gmail.com">aishwaryathathapudi@gmail.com</a>
           <a href="https://github.com/codingwithaish" target="_blank" rel="noreferrer">github.com/codingwithaish</a>
@@ -184,25 +193,21 @@
   </footer>
 
   <script>
-    const revealTargets = document.querySelectorAll(
-      ".hero-grid > *, .section-title, .lead, .skills-grid article, .card, .timeline article, .two-col article, .contact-links a"
-    );
-
-    revealTargets.forEach((el) => el.classList.add("reveal"));
+    const targets = document.querySelectorAll('.reveal');
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
+            entry.target.classList.add('in-view');
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.18 }
+      { threshold: 0.16 }
     );
 
-    revealTargets.forEach((el) => observer.observe(el));
+    targets.forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
