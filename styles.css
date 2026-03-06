@@ -1,15 +1,15 @@
 :root {
-  --bg: #fff7fb;
-  --bg-soft: #fdeef6;
-  --surface: rgba(255, 250, 253, 0.86);
-  --surface-2: rgba(255, 244, 250, 0.8);
-  --text: #40233b;
-  --muted: #8c5f7e;
-  --accent: #d86aa4;
-  --accent-2: #e784ba;
-  --accent-3: #f2a8cf;
-  --border: rgba(201, 118, 166, 0.26);
-  --shadow: 0 20px 40px rgba(188, 116, 154, 0.18);
+  --bg: #fdf8f3;
+  --bg-soft: #f8eee7;
+  --surface: rgba(255, 250, 245, 0.9);
+  --surface-2: rgba(252, 242, 234, 0.84);
+  --text: #4b342f;
+  --muted: #87645e;
+  --accent: #c67498;
+  --accent-2: #b97b63;
+  --accent-3: #d89c7d;
+  --border: rgba(170, 122, 104, 0.28);
+  --shadow: 0 20px 40px rgba(145, 106, 92, 0.18);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 16% 6%, rgba(236, 154, 196, 0.28), transparent 34%),
-    radial-gradient(circle at 86% 18%, rgba(255, 193, 220, 0.24), transparent 30%),
-    linear-gradient(180deg, #fffafd 0%, #fef2f8 56%, #fdeff6 100%);
+    radial-gradient(circle at 16% 6%, rgba(215, 165, 140, 0.25), transparent 34%),
+    radial-gradient(circle at 86% 18%, rgba(239, 190, 170, 0.22), transparent 30%),
+    linear-gradient(180deg, #fffaf5 0%, #fcf2ea 56%, #faece4 100%);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ body {
   height: 360px;
   top: -80px;
   right: -80px;
-  background: radial-gradient(circle at 30% 30%, #ffc5df, #f4a9cd, #f9d3e5);
+  background: radial-gradient(circle at 30% 30%, #f3c8b3, #e5a88f, #f2d2c1);
 }
 
 .orb-2 {
@@ -55,7 +55,7 @@ body {
   height: 420px;
   left: -120px;
   bottom: -120px;
-  background: radial-gradient(circle at 70% 30%, #ffd6e9, #f9c0dd, #ffe5f2);
+  background: radial-gradient(circle at 70% 30%, #f5d8c8, #e6bda8, #f8e7dc);
   animation-duration: 17s;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .alt {
-  background: linear-gradient(120deg, rgba(255, 245, 251, 0.75), rgba(255, 237, 247, 0.9));
+  background: linear-gradient(120deg, rgba(255, 246, 237, 0.78), rgba(251, 236, 226, 0.9));
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -79,7 +79,7 @@ body {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba(255, 246, 251, 0.78);
+  background: rgba(255, 247, 240, 0.82);
   border-bottom: 1px solid var(--border);
 }
 
@@ -191,7 +191,7 @@ h2 {
 
 .btn-ghost {
   color: var(--text);
-  background: rgba(255, 240, 248, 0.82);
+  background: rgba(252, 240, 232, 0.85);
 }
 
 .metrics {
@@ -296,8 +296,8 @@ h2 {
 
 .card:hover {
   transform: scale(1.03) translateY(-5px);
-  border-color: rgba(216, 106, 164, 0.58);
-  box-shadow: 0 22px 36px rgba(192, 120, 160, 0.25);
+  border-color: rgba(185, 123, 99, 0.62);
+  box-shadow: 0 22px 36px rgba(145, 106, 92, 0.26);
 }
 
 .card a {
@@ -333,7 +333,7 @@ h2 {
   text-decoration: none;
   color: var(--text);
   border: 1px solid var(--border);
-  background: rgba(255, 240, 248, 0.82);
+  background: rgba(252, 240, 232, 0.85);
   border-radius: 999px;
   padding: 0.55rem 0.85rem;
   transition: transform 0.25s ease, border-color 0.25s ease;
@@ -341,7 +341,7 @@ h2 {
 
 .contact-links a:hover {
   transform: translateY(-2px);
-  border-color: rgba(216, 106, 164, 0.62);
+  border-color: rgba(185, 123, 99, 0.62);
 }
 
 footer {
@@ -349,7 +349,7 @@ footer {
   text-align: center;
   border-top: 1px solid var(--border);
   color: var(--muted);
-  background: rgba(255, 239, 247, 0.82);
+  background: rgba(251, 237, 227, 0.84);
 }
 
 .reveal {
