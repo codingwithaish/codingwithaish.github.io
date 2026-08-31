@@ -3,145 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Thathapudi Nikhitha Aishwarya - Full-stack developer portfolio in a modern tech-company style." />
-  <title>Aishwarya | Engineer & Builder</title>
+  <meta name="description" content="Aishwarya Thathapudi — Computer Science engineer and University of Chicago MPCS student. Full-stack development, applied AI, and published research." />
+  <title>Aishwarya Thathapudi — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260306-16" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260831-2" />
 </head>
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-
   <header class="site-header">
     <div class="container topbar">
-      <a class="logo" href="#">Aishwarya</a>
+      <a class="wordmark" href="#top">Aishwarya Thathapudi</a>
       <nav>
-        <a href="#work">Work</a>
-        <a href="#expertise">Expertise</a>
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-ghost" href="mailto:aishwaryathathapudi@gmail.com">Let’s Talk</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero section">
-      <div class="container hero-layout">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Portfolio • Engineering • Product Mindset</p>
-          <h1>Turning ideas into real-world web products.</h1>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">Explore Projects</a>
-            <a class="btn btn-ghost" href="#expertise">View Expertise</a>
-          </div>
-          <div class="metrics">
-            <article>
-              <h3>9.2/10</h3>
-              <p>CGPA</p>
-            </article>
-            <article>
-              <h3>MERN</h3>
-              <p>Core Stack</p>
-            </article>
-            <article>
-              <h3>2</h3>
-              <p>Industry Internships</p>
-            </article>
-          </div>
-        </div>
+  <main id="top">
+    <section class="hero container">
+      <h1>Aishwarya Thathapudi</h1>
+      <p class="tagline">Computer Science engineer building full-stack products and applied AI systems.</p>
 
-        <aside id="about" class="hero-panel reveal">
-          <p class="panel-kicker">About Me</p>
-          <h2>Thathapudi Nikhitha Aishwarya</h2>
-          <p>
-            I am a Computer Science Engineering student with a strong interest in full-stack application development.
-            I enjoy building modern web applications with clean user interfaces and efficient backend systems.
-          </p>
+      <dl class="facts">
+        <div class="fact-row">
+          <dt>Education</dt>
+          <dd>Master's Program in Computer Science — University of Chicago · expected Dec 2027</dd>
+        </div>
+        <div class="fact-row">
+          <dt>Previous</dt>
+          <dd>B.Tech, Computer Science — Bapatla Engineering College · 9.26 CGPA · May 2026</dd>
+        </div>
+        <div class="fact-row">
+          <dt>Focus</dt>
+          <dd>Applied AI Engineer and Software Development Engineer roles</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="about" class="entry-row container">
+      <p class="field-label">About</p>
+      <div class="field-content">
+        <p>
+          I'm a Computer Science engineer heading into the MPCS program at the University of Chicago this autumn,
+          specializing in Software Engineering. My background spans full-stack web development and applied AI,
+          including a published paper on an explainable AI system for healthcare. I'm seeking Applied AI Engineer
+          and Software Development Engineer roles.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="entry-row container">
+      <p class="field-label">Experience</p>
+      <div class="field-content">
+        <article class="role">
+          <div class="role-head">
+            <h3>Web Developer Intern <span class="role-org">— Eligo</span></h3>
+            <p class="role-dates">May 2025 – Jul 2025</p>
+          </div>
           <ul>
-            <li>Computer Science Engineer with CGPA 9.2 / 10</li>
-            <li>Full-Stack Developer (MERN) and AI Enthusiast</li>
-            <li>Internship experience at NIELIT and Eligo</li>
+            <li>Developed FitHealth Tracker, a full-stack fitness tracking application using the MERN stack, enabling user profiles, workout logging, and fitness progress monitoring.</li>
+            <li>Built responsive frontend interfaces and integrated them with backend services to deliver end-to-end web application functionality.</li>
+            <li>Implemented data storage and management for user profiles, workout records, and fitness progress, along with graphical visualizations of workout history and calorie expenditure.</li>
+            <li>Applied Git for version control and managed application development workflows throughout the internship.</li>
           </ul>
-        </aside>
+        </article>
+        <article class="role">
+          <div class="role-head">
+            <h3>AIML using Python Intern <span class="role-org">— NIELIT</span></h3>
+            <p class="role-dates">May 2024 – Jul 2024</p>
+          </div>
+          <ul>
+            <li>Developed an ML-based Study Planner using Python and FastAPI, generating personalized study recommendations based on subject priority, exam deadlines, and previous performance.</li>
+            <li>Engineered a diabetes prediction system using Python, Pandas, NumPy, and Scikit-learn, applying data preprocessing, feature standardization, train-test splitting, and supervised learning techniques to clinical data.</li>
+            <li>Implemented and evaluated SVM, KNN, and Decision Tree classification models, analyzed model performance using evaluation metrics, and documented the methodology, implementation, results, and findings.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="work" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Case Studies</p>
-          <h2>Selected Work</h2>
-        </div>
-        <div class="cards work-grid">
-          <article class="card reveal">
-            <p class="tag">Product Engineering</p>
-            <h3>FitHealth Tracker</h3>
-            <p>Built a scalable fitness web app with progress analytics and clean dashboard-driven UX.</p>
-            <a href="https://github.com/codingwithaish/FitHealth-Tracker-MERN" target="_blank" rel="noreferrer">View Project</a>
-          </article>
-          <article class="card reveal">
-            <p class="tag">Applied AI</p>
-            <h3>Study Planner for Students</h3>
-            <p>Developed an intelligent planner that creates personalized schedules based on priorities and deadlines.</p>
-            <a href="https://ml-study-planner-for-students.onrender.com/" target="_blank" rel="noreferrer">View Project</a>
-          </article>
-          <article class="card reveal">
-            <p class="tag">Health Analytics</p>
-            <h3>Diabetes Detection Model</h3>
-            <p>Implemented a supervised pipeline for early diabetes prediction with structured model evaluation.</p>
-            <a class="project-label" href="https://github.com/codingwithaish" target="_blank" rel="noreferrer">Project</a>
-          </article>
-          <article class="card reveal">
-            <p class="tag">Full-Stack Web App</p>
-            <h3>MERN BookStore</h3>
-            <p>Developed a beginner-friendly MERN-based bookstore application with CRUD operations.</p>
-            <a href="https://github.com/codingwithaish/MERN-BookStore" target="_blank" rel="noreferrer">View Project</a>
-          </article>
-        </div>
+    <section id="research" class="entry-row container">
+      <p class="field-label">Research</p>
+      <div class="field-content">
+        <article class="role">
+          <div class="role-head">
+            <h3>An Explainable Machine Learning Approach for Heart Disease Prediction using Data Analytics and Streamlit Dashboard</h3>
+            <p class="role-dates">Aug 2025 – Apr 2026</p>
+          </div>
+          <p class="role-meta">Team lead, 4-member team · Published in IJSREM, April 2026 · Python, Pandas, NumPy, Scikit-learn, XGBoost, SHAP, Streamlit, Plotly, ReportLab</p>
+          <ul>
+            <li>Led a 4-member team to extend the base paper's data-analytics approach for heart disease prediction, implementing advanced machine learning models and an end-to-end system with a user-friendly interface.</li>
+            <li>Developed and evaluated Logistic Regression, Decision Tree, and XGBoost models, integrating SHAP-based explainable AI and feature analysis to provide interpretable predictions.</li>
+            <li>Built an interactive Streamlit dashboard with data visualizations, personalized recommendations, and automated PDF report generation for end-to-end risk assessment.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="expertise" class="section alt">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Expertise & Stack</h2>
-        </div>
-        <div class="cards capability-grid">
-          <article class="card reveal">
-            <h3>Frontend Engineering</h3>
-            <p>HTML, CSS, JavaScript, TypeScript, React.js</p>
-          </article>
-          <article class="card reveal">
-            <h3>Backend Engineering</h3>
-            <p>Node.js, Express.js, REST APIs, SQL, MongoDB</p>
-          </article>
-          <article class="card reveal">
-            <h3>Tools & Workflow</h3>
-            <p>Git, Postman, MongoDB Compass, Jupyter Notebook, Linux, AWS EC2 basics</p>
-          </article>
-          <article class="card reveal">
-            <h3>Experience</h3>
-            <p>Web Developer Intern at Eligo and AIML Intern at NIELIT with production-focused delivery.</p>
-          </article>
-        </div>
+    <section id="projects" class="entry-row container">
+      <p class="field-label">Projects</p>
+      <div class="field-content">
+        <article class="project">
+          <h3><a href="https://github.com/codingwithaish/MERN-BookStore" target="_blank" rel="noreferrer">MERN BookStore</a></h3>
+          <p>A full-stack bookstore application built on the MERN stack — browse, search, and manage a book collection with complete CRUD functionality.</p>
+        </article>
+        <article class="project">
+          <h3><a href="https://github.com/codingwithaish/Fast-API-ML-study-planner" target="_blank" rel="noreferrer">Study Planner (FastAPI + ML)</a></h3>
+          <p>A FastAPI machine learning app that generates personalized daily study schedules, predicting subject priority from exam deadlines, difficulty, and past performance. <a href="https://ml-study-planner-for-students.onrender.com/" target="_blank" rel="noreferrer">Live demo</a>.</p>
+        </article>
+        <article class="project">
+          <h3><a href="https://github.com/codingwithaish/FitHealth-Tracker-MERN" target="_blank" rel="noreferrer">FitHealth Tracker</a></h3>
+          <p>A fitness monitoring web app built on the MERN stack, tracking BMI, workouts, calories burned, and progress reports.</p>
+        </article>
+        <article class="project">
+          <h3><a href="https://github.com/codingwithaish/Heart-disease-prediction-system" target="_blank" rel="noreferrer">Heart Disease Prediction System</a></h3>
+          <p>An interactive tool that predicts heart disease risk from user-entered health details, with explanations, recommendations, and visual reports.</p>
+        </article>
+        <article class="project">
+          <h3><a href="https://github.com/codingwithaish/MyJobTracker" target="_blank" rel="noreferrer">MyJobTracker</a></h3>
+          <p>A personal job-application tracker, built to solve the problem of keeping track of applications during an active job search.</p>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container contact-box reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Open to internships and software roles.</h2>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:aishwaryathathapudi@gmail.com">aishwaryathathapudi@gmail.com</a>
+    <section id="skills" class="entry-row container">
+      <p class="field-label">Skills</p>
+      <div class="field-content">
+        <dl class="facts skills-facts">
+          <div class="fact-row">
+            <dt>Languages &amp; DBs</dt>
+            <dd>Python, Java, SQL, MongoDB</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Web</dt>
+            <dd>HTML, CSS, TypeScript, React.js, Node.js, Express.js</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Tools</dt>
+            <dd>Git, GitHub, Postman, Jupyter Notebook, AWS (EC2)</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Certifications</dt>
+            <dd>Google Cloud – Generative AI Fundamentals, IBM – AI Fundamentals, University of London – Responsive Website Basics, ReactJS Bootcamp, Cybersecurity Workshop</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact" class="entry-row container">
+      <p class="field-label">Contact</p>
+      <div class="field-content">
+        <p>Open to Applied AI Engineer and Software Development Engineer roles.</p>
+        <p class="link-list">
           <a href="https://github.com/codingwithaish" target="_blank" rel="noreferrer">github.com/codingwithaish</a>
           <a href="https://linkedin.com/in/aishwarya-thathapudi" target="_blank" rel="noreferrer">linkedin.com/in/aishwarya-thathapudi</a>
-        </div>
+        </p>
       </div>
     </section>
   </main>
@@ -151,23 +172,5 @@
       <p>Thathapudi Nikhitha Aishwarya</p>
     </div>
   </footer>
-
-  <script>
-    const targets = document.querySelectorAll('.reveal');
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.16 }
-    );
-
-    targets.forEach((el) => observer.observe(el));
-  </script>
 </body>
 </html>
