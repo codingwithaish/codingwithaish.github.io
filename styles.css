@@ -197,8 +197,13 @@ h3 {
 }
 
 .role-org {
-  font-weight: 400;
-  color: var(--ink-soft);
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-left: 8px;
+}
+
+.role-org::before {
+    content: "— ";
 }
 
 .role-dates {
