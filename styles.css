@@ -1,10 +1,10 @@
 :root {
-  --paper: #f6f5f1;
-  --ink: #1d1c18;
-  --ink-soft: #6b6858;
-  --line: #dedacd;
-  --accent: #2f5d50;
-  --accent-tint: #eaf0ec;
+  --paper: #5a1f2b;
+  --ink: #ffffff;
+  --ink-soft: #f0dfe2;
+  --line: #81404d;
+  --accent: #ffd6cf;
+  --accent-tint: #71303c;
   --serif: "Source Serif 4", "Georgia", serif;
   --sans: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", "SFMono-Regular", monospace;
