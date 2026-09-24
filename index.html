@@ -10,6 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=20260831-1" />
 </head>
+  <script>
+  document.addEventListener("mousemove", (e) => {
+    const sparkle = document.createElement("span");
+
+    sparkle.className = "cursor-sparkle";
+    sparkle.style.left = `${e.clientX}px`;
+    sparkle.style.top = `${e.clientY}px`;
+
+    document.body.appendChild(sparkle);
+
+    setTimeout(() => {
+      sparkle.remove();
+    }, 700);
+  });
+</script>
 <body>
   <header class="site-header">
     <div class="container topbar">
