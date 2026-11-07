@@ -3,258 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nikhitha Aishwarya Thathapudi — Computer Science, applied AI, full-stack engineering, and research." />
+  <meta name="description" content="Aishwarya Thathapudi — Computer Science engineer and University of Chicago MS student. Full-stack development, applied AI, and published research." />
+  <meta name="theme-color" content="#FFEFEA" />
   <title>Nikhitha Aishwarya Thathapudi — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=peach-2026" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261107-1" />
 </head>
-
 <body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="blob blob-a" aria-hidden="true"></div>
+  <div class="blob blob-b" aria-hidden="true"></div>
+  <div class="blob blob-c" aria-hidden="true"></div>
+
   <header class="site-header">
-    <div class="container topbar">
-      <a class="wordmark" href="#top">Nikhitha Aishwarya Thathapudi</a>
-      <nav>
+    <div class="topbar">
+      <a class="wordmark" href="#top" aria-label="Nikhitha Aishwarya Thathapudi, home">
+        <span class="monogram">NA</span>
+        <span class="wordmark-text">Nikhitha Aishwarya Thathapudi</span>
+      </a>
+      <nav aria-label="Main">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero container">
-  <p class="hero-kicker">COMPUTER SCIENCE · ARTIFICIAL INTELLIGENCE - APPLICATIONS</p>
 
-  <h1>Nikhitha Aishwarya Thathapudi</h1>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="pulse"></span>Computer science &amp; artificial intelligence applications</p>
 
-  <p class="tagline">
-    I build full-stack applications and applied AI systems
-    that turn complex problems into practical solutions.
-  </p>
+        <h1>
+          <span class="h1-line">Nikhitha Aishwarya</span>
+          <span class="h1-line h1-second">Thathapudi</span>
+        </h1>
 
-  <div class="hero-meta">
-    <span>University of Chicago · MS in Computer Science specializing in</span>
-    <span>Artificial Intelligence - Applications · Dec 2027</span>
-  </div>
-</section>
-
-    <section id="about" class="entry-row container">
-      <p class="field-label">About</p>
-      <div class="field-content">
-        <p>
-          I'm a Computer Science engineer and Master's student in Computer Science at the University of Chicago, specializing in Artificial Intelligence - Applications. I build full-stack applications and applied AI systems, combining software engineering with machine learning to develop practical, data-driven solutions. My experience includes full-stack development, machine learning, and leading a published research project on explainable AI for healthcare.
+        <p class="tagline">
+          I build full-stack applications and applied AI systems
+          that turn complex problems into practical solutions.
         </p>
+
+        <p class="hero-meta">
+          University of Chicago — MS in Computer Science, specializing in
+          Artificial Intelligence – Applications. Graduating Dec 2027.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-hidden="false">
+        <div class="badge">
+          <svg class="badge-ring" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" />
+            </defs>
+            <text>
+              <textPath href="#circ" textLength="498" lengthAdjust="spacing">University of Chicago ✦ MS Computer Science ✦ Class of Dec 2027 ✦ </textPath>
+            </text>
+          </svg>
+          <div class="badge-core">
+            <svg viewBox="0 0 100 100" class="badge-star" aria-hidden="true">
+              <path d="M50 6 C54 30 70 46 94 50 C70 54 54 70 50 94 C46 70 30 54 6 50 C30 46 46 30 50 6Z" />
+            </svg>
+            <span>NA</span>
+          </div>
+        </div>
+
+        <div class="chip chip-1"><strong>99.44%</strong><span>accuracy on my XGBoost heart-disease model</span></div>
+        <div class="chip chip-2"><strong>Published</strong><span>IJSREM, April 2026</span></div>
+        <div class="chip chip-3"><strong>0.88 ROC-AUC</strong><span>diabetes prediction at NIELIT</span></div>
+        <div class="chip chip-4"><strong>Led 4</strong><span>person research team</span></div>
       </div>
     </section>
-    
-    <section id="experience" class="entry-row container">
-  <p class="field-label">Experience</p>
 
-  <div class="field-content">
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About me</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a Computer Science engineer and Master's student in Computer Science at the University of Chicago, specializing in Artificial Intelligence – Applications. I build full-stack applications and applied AI systems, combining software engineering with machine learning to develop practical, data-driven solutions. My experience includes full-stack development, machine learning, and leading a published research project on explainable AI for healthcare.
+        </p>
+        <ul class="about-pills" aria-label="Focus areas">
+          <li class="pill tint-peach">Full-stack development</li>
+          <li class="pill tint-rose">Applied machine learning</li>
+          <li class="pill tint-lilac">Explainable AI</li>
+          <li class="pill tint-butter">Healthcare data</li>
+        </ul>
+      </div>
+    </section>
 
-    <article class="role">
-      <div class="role-head">
-        <h3>
-          Web Development Intern
-          <span class="role-org">Internsup Innovations</span>
-        </h3>
-        <p class="role-dates">May 2025 – Jul 2025</p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Two internships, one building for the web and one teaching machines to predict.</p>
       </div>
 
-      <ul>
-        <li>
-          Developed <strong>FitHealth Tracker</strong>, a full-stack fitness web
-          application using <strong>MongoDB, Express.js, React.js, and
-          Node.js (MERN)</strong>, implementing <strong>4 core modules</strong>:
-          profile management, workout logging, history tracking, and progress visualization.
-        </li>
+      <div class="timeline">
 
-        <li>
-          Built <strong>RESTful APIs</strong> for profile and workout operations
-          with <strong>MongoDB persistence</strong>, supporting create, retrieve,
-          update, and delete workflows for user and workout data across sessions.
-        </li>
+        <article class="role tint-peach">
+          <div class="role-head">
+            <h3>Web Development Intern</h3>
+            <p class="role-dates">May 2025 – Jul 2025</p>
+          </div>
+          <p class="role-org">Internsup Innovations</p>
+          <ul>
+            <li>
+              Developed <strong>FitHealth Tracker</strong>, a full-stack fitness web
+              application using <strong>MongoDB, Express.js, React.js, and
+              Node.js (MERN)</strong>, implementing <strong>4 core modules</strong>:
+              profile management, workout logging, history tracking, and progress visualization.
+            </li>
+            <li>
+              Built <strong>RESTful APIs</strong> for profile and workout operations
+              with <strong>MongoDB persistence</strong>, supporting create, retrieve,
+              update, and delete workflows for user and workout data across sessions.
+            </li>
+            <li>
+              Implemented <strong>BMI and calorie-burn calculations</strong> and a
+              <strong>7-day activity dashboard using Chart.js</strong>, enabling users
+              to log workouts, track calorie goals, review history, and visualize weekly progress.
+            </li>
+          </ul>
+        </article>
 
-        <li>
-          Implemented <strong>BMI and calorie-burn calculations</strong> and a
-          <strong>7-day activity dashboard using Chart.js</strong>, enabling users
-          to log workouts, track calorie goals, review history, and visualize weekly progress.
-        </li>
-      </ul>
-    </article>
+        <article class="role tint-rose">
+          <div class="role-head">
+            <h3>Artificial Intelligence &amp; Machine Learning using Python Intern</h3>
+            <p class="role-dates">May 2024 – Jul 2024</p>
+          </div>
+          <p class="role-org">National Institute of Electronics &amp; Information Technology (NIELIT)</p>
+          <ul>
+            <li>
+              Developed a <strong>diabetes prediction model in Python</strong> using
+              <strong>NumPy, Pandas, and Scikit-learn</strong>, preprocessing and
+              standardizing clinical features including <strong>8 input attributes</strong>
+              such as glucose, BMI, blood pressure, age, and medical history for supervised classification.
+            </li>
+            <li>
+              Implemented and compared <strong>3 ML classifiers</strong> —
+              SVM, K-NN, and Decision Tree — achieving <strong>77% accuracy</strong>
+              with SVM.
+            </li>
+            <li>
+              Built an end-to-end predictive pipeline from data preprocessing and
+              feature standardization to model evaluation and new-patient prediction,
+              achieving <strong>0.88 ROC-AUC</strong> while generating binary diabetes
+              predictions from clinical input data.
+            </li>
+          </ul>
+        </article>
 
+      </div>
+    </section>
 
-    <article class="role">
-      <div class="role-head">
-        <h3>
-          Artificial Intelligence &amp; Machine Learning using Python Intern
-          <span class="role-org">
-            National Institute of Electronics &amp; Information Technology (NIELIT)
-          </span>
-        </h3>
-
-        <p class="role-dates">May 2024 – Jul 2024</p>
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="section-head">
+        <h2>Research</h2>
+        <p>My final-year project, now a published paper.</p>
       </div>
 
-      <ul>
-        <li>
-          Developed a <strong>diabetes prediction model in Python</strong> using
-          <strong>NumPy, Pandas, and Scikit-learn</strong>, preprocessing and
-          standardizing clinical features including <strong>8 input attributes</strong>
-          such as glucose, BMI, blood pressure, age, and medical history for supervised classification.
-        </li>
+      <article class="research-card">
+        <div class="research-glow" aria-hidden="true"></div>
+        <div class="role-head">
+          <h3>Heart Disease Prediction Using Data Analytics</h3>
+          <p class="role-dates">Jan 2026 – Apr 2026</p>
+        </div>
+        <p class="published-badge">Published in IJSREM, April 2026</p>
+        <ul>
+          <li>
+            Led a <strong>4-member team</strong> to engineer an end-to-end
+            heart disease risk prediction system using <strong>Python,
+            Streamlit, Scikit-learn, and XGBoost</strong>, integrating
+            <strong>7 functional modules</strong> from user input and
+            preprocessing to prediction and reporting.
+          </li>
+          <li>
+            Implemented and evaluated ML models, selecting
+            <strong>XGBoost</strong> as the final model after comparative
+            evaluation and achieving <strong>99.44% accuracy</strong>.
+          </li>
+          <li>
+            Integrated <strong>SHAP-based Explainable AI</strong> and visualization
+            modules to generate feature-contribution explanations, risk-level
+            visualizations, and interpretable prediction insights.
+          </li>
+          <li>
+            Designed personalized recommendations and automated PDF reporting,
+            combining predictions, explanations, user inputs, and recommendations
+            into downloadable reports; published in
+            <strong>IJSREM (April 2026)</strong>.
+          </li>
+        </ul>
+      </article>
+    </section>
 
-        <li>
-          Implemented and compared <strong>3 ML classifiers</strong> —
-          SVM, K-NN, and Decision Tree — achieving <strong>77% accuracy</strong>
-          with SVM.
-        </li>
-
-        <li>
-          Built an end-to-end predictive pipeline from data preprocessing and
-          feature standardization to model evaluation and new-patient prediction,
-          achieving <strong>0.88 ROC-AUC</strong> while generating binary diabetes
-          predictions from clinical input data.
-        </li>
-      </ul>
-    </article>
-
-  </div>
-</section>
-
-    <section id="research" class="entry-row container">
-  <p class="field-label">Research</p>
-
-  <div class="field-content">
-
-    <article class="role">
-
-      <div class="role-head">
-        <h3>
-          Heart Disease Prediction Using Data Analytics
-        </h3>
-
-        <p class="role-dates">Jan 2026 – Apr 2026</p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Things I've built and shipped. Tap a card to open the code.</p>
       </div>
 
-      <ul>
-        <li>
-          Led a <strong>4-member team</strong> to engineer an end-to-end
-          heart disease risk prediction system using <strong>Python,
-          Streamlit, Scikit-learn, and XGBoost</strong>, integrating
-          <strong>7 functional modules</strong> from user input and
-          preprocessing to prediction and reporting.
-        </li>
+      <div class="bento">
+        <article class="project tint-peach span-4">
+          <h3><a href="https://github.com/codingwithaish/Fast-API-ML-study-planner" target="_blank" rel="noreferrer">Study Planner (FastAPI + ML)</a></h3>
+          <p>A FastAPI machine learning app that generates personalized daily study schedules, predicting subject priority from exam deadlines, difficulty, and past performance.</p>
+          <div class="project-foot">
+            <ul class="tags"><li>FastAPI</li><li>Machine learning</li></ul>
+            <a class="live" href="https://ml-study-planner-for-students.onrender.com/" target="_blank" rel="noreferrer">Live demo</a>
+          </div>
+        </article>
 
-        <li>
-          Implemented and evaluated ML models, selecting
-          <strong>XGBoost</strong> as the final model after comparative
-          evaluation and achieving <strong>99.44% accuracy</strong>.
-        </li>
-
-        <li>
-          Integrated <strong>SHAP-based Explainable AI</strong> and visualization
-          modules to generate feature-contribution explanations, risk-level
-          visualizations, and interpretable prediction insights.
-        </li>
-
-        <li>
-          Designed personalized recommendations and automated PDF reporting,
-          combining predictions, explanations, user inputs, and recommendations
-          into downloadable reports; published in
-          <strong>IJSREM (April 2026)</strong>.
-        </li>
-      </ul>
-
-    </article>
-
-  </div>
-</section>
-
-    <section id="projects" class="entry-row container">
-      <p class="field-label">Projects</p>
-      <div class="field-content">
-        <article class="project">
+        <article class="project tint-lilac span-2">
           <h3><a href="https://github.com/codingwithaish/MERN-BookStore" target="_blank" rel="noreferrer">MERN BookStore</a></h3>
           <p>A full-stack bookstore application built on the MERN stack — browse, search, and manage a book collection with complete CRUD functionality.</p>
+          <ul class="tags"><li>MongoDB</li><li>Express</li><li>React</li><li>Node.js</li></ul>
         </article>
-        <article class="project">
-          <h3><a href="https://github.com/codingwithaish/Fast-API-ML-study-planner" target="_blank" rel="noreferrer">Study Planner (FastAPI + ML)</a></h3>
-          <p>A FastAPI machine learning app that generates personalized daily study schedules, predicting subject priority from exam deadlines, difficulty, and past performance. <a href="https://ml-study-planner-for-students.onrender.com/" target="_blank" rel="noreferrer">Live demo</a>.</p>
-        </article>
-        <article class="project">
+
+        <article class="project tint-butter span-2">
           <h3><a href="https://github.com/codingwithaish/FitHealth-Tracker-MERN" target="_blank" rel="noreferrer">FitHealth Tracker</a></h3>
           <p>A fitness monitoring web app built on the MERN stack, tracking BMI, workouts, calories burned, and progress reports.</p>
+          <ul class="tags"><li>MERN</li><li>Chart.js</li></ul>
         </article>
-        <article class="project">
+
+        <article class="project tint-rose span-4">
           <h3><a href="https://github.com/codingwithaish/Heart-disease-prediction-system" target="_blank" rel="noreferrer">Heart Disease Prediction System</a></h3>
           <p>An interactive tool that predicts heart disease risk from user-entered health details, with explanations, recommendations, and visual reports.</p>
+          <ul class="tags"><li>Python</li><li>XGBoost</li><li>SHAP</li><li>Streamlit</li></ul>
         </article>
       </div>
     </section>
 
-  <section id="skills" class="entry-row container">
-  <p class="field-label">Skills</p>
-
-  <div class="field-content">
-
-    <dl class="facts skills-facts">
-
-      <div class="fact-row">
-        <dt>Technical Languages</dt>
-        <dd>Python, Java, SQL, Typescript</dd>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
       </div>
 
-      <div class="fact-row">
-        <dt>Web/Frontend</dt>
-        <dd>HTML, CSS, React.js</dd>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul class="chips"><li>Python</li><li>Java</li><li>SQL</li><li>Typescript</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>Web &amp; frontend</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>React.js</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>Backend &amp; frameworks</h3>
+          <ul class="chips"><li>Node.js</li><li>Express.js</li><li>Flask</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; platforms</h3>
+          <ul class="chips"><li>Git</li><li>GitHub</li><li>Linux</li><li>MongoDB</li><li>AWS (EC2)</li></ul>
+        </div>
+        <div class="skill-card skill-wide">
+          <h3>Certifications &amp; training</h3>
+          <ul class="chips chips-soft">
+            <li>Google Cloud – Generative AI</li>
+            <li>IBM – AI Fundamentals</li>
+            <li>University of London – Responsive Website Basics</li>
+            <li>Anthropic – Claude 101</li>
+            <li>Cyber Security &amp; Ethical Hacking</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="fact-row">
-        <dt>Backend &amp; Frameworks</dt>
-        <dd>Node.js, Express.js, Flask</dd>
-      </div>
-
-      <div class="fact-row">
-        <dt>Tools &amp; Platforms</dt>
-        <dd>Git, GitHub, Linux, MongoDB, AWS (EC2)</dd>
-      </div>
-
-      <div class="fact-row">
-        <dt>Certifications/Training</dt>
-        <dd>
-          Google Cloud – Generative AI; IBM – AI Fundamentals;
-          University of London - Responsive Website Basics;
-          Anthropic - Claude 101; Cyber Security &amp; Ethical Hacking
-        </dd>
-      </div>
-
-    </dl>
-
-  </div>
-</section>
-
-    <section id="contact" class="entry-row container">
-      <p class="field-label">Contact</p>
-      <div class="field-content">
-        <p>View my GitHub and LinkedIn here...</p>
-        <p class="link-list">
-          <a href="https://github.com/codingwithaish" target="_blank" rel="noreferrer">github.com/codingwithaish</a>
-          <a href="https://linkedin.com/in/aishwarya-thathapudi" target="_blank" rel="noreferrer">linkedin.com/in/aishwarya-thathapudi</a>
-        </p>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="contact-card">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <h2>Say hello</h2>
+        <p>View my code on GitHub or connect with me on LinkedIn.</p>
+        <div class="contact-links">
+          <a class="btn btn-solid" href="https://github.com/codingwithaish" target="_blank" rel="noreferrer">github.com/codingwithaish</a>
+          <a class="btn btn-light" href="https://linkedin.com/in/aishwarya-thathapudi" target="_blank" rel="noreferrer">linkedin.com/in/aishwarya-thathapudi</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>Nikhitha Aishwarya Thathapudi</p>
-    </div>
+    <p>Nikhitha Aishwarya Thathapudi</p>
   </footer>
+
+  <script>
+    // Pastel cursor sparkles (skipped on touch screens and for reduced motion)
+    (function () {
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      if (reduce || !fine) return;
+
+      var colors = ["#F7A8B8", "#FFBE98", "#E3C8F2", "#FFD98A", "#FFFFFF"];
+      var last = 0;
+
+      document.addEventListener("mousemove", function (e) {
+        var now = Date.now();
+        if (now - last < 28) return;
+        last = now;
+
+        var s = document.createElement("span");
+        s.className = "cursor-sparkle";
+        s.style.left = e.clientX + "px";
+        s.style.top = e.clientY + "px";
+        s.style.setProperty("--c", colors[Math.floor(Math.random() * colors.length)]);
+        s.style.setProperty("--dx", (Math.random() * 30 - 15) + "px");
+        document.body.appendChild(s);
+        setTimeout(function () { s.remove(); }, 800);
+      });
+    })();
+  </script>
 </body>
 </html>
